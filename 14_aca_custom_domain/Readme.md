@@ -32,7 +32,7 @@ $RG="rg-aca"
 $LOCATION="westeurope"
 $ACA_ENVIRONMENT="aca-environment"
 $ACA_APP="aca-app"
-$DOMAIN_NAME="houssem-dellai-1.com" # .com, .net, .co.uk, .org, .nl, .in, .biz, .org.uk, and .co.in
+$DOMAIN_NAME="thiruaws.comn" # .com, .net, .co.uk, .org, .nl, .in, .biz, .org.uk, and .co.in
 $SUBDOMAIN_NAME="myapp"
 ```
 
@@ -135,8 +135,8 @@ az network dns record-set cname create `
 # {
 #   "TTL": 3600,
 #   "etag": "67faed21-039b-4024-bc9c-443aca8d598e",
-#   "fqdn": "myapp.houssem-dellai-1.com.",
-#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/houssem-dellai-1.com/CNAME/myapp",
+#   "fqdn": "myapp.thiruaws.comn.",
+#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/thiruaws.comn/CNAME/myapp",
 #   "name": "myapp",
 #   "provisioningState": "Succeeded",
 #   "resourceGroup": "rg-aca",
@@ -155,8 +155,8 @@ az network dns record-set cname set-record `
 #   },
 #   "TTL": 3600,
 #   "etag": "e3370ba0-f27b-49e3-a816-2a4884243cb3",
-#   "fqdn": "myapp.houssem-dellai-1.com.",
-#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/houssem-dellai-1.com/CNAME/myapp",
+#   "fqdn": "myapp.thiruaws.comn.",
+#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/thiruaws.comn/CNAME/myapp",
 #   "name": "myapp",
 #   "provisioningState": "Succeeded",
 #   "resourceGroup": "rg-aca",
@@ -176,8 +176,8 @@ az network dns record-set txt create `
 #   "TTL": 3600,
 #   "TXTRecords": [],
 #   "etag": "ec4c5d5e-db4e-4cf7-b36c-9aa43e8592c9",
-#   "fqdn": "asuid.myapp.houssem-dellai-1.com.",
-#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/houssem-dellai-1.com/TXT/asuid.myapp",
+#   "fqdn": "asuid.myapp.thiruaws.comn.",
+#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/thiruaws.comn/TXT/asuid.myapp",
 #   "name": "asuid.myapp",
 #   "provisioningState": "Succeeded",
 #   "resourceGroup": "rg-aca",
@@ -200,8 +200,8 @@ az network dns record-set txt add-record `
 #     }
 #   ],
 #   "etag": "283d793c-b9f5-4b0f-a18c-39ab0ee7a733",
-#   "fqdn": "asuid.myapp.houssem-dellai-1.com.",
-#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/houssem-dellai-1.com/TXT/asuid.myapp",
+#   "fqdn": "asuid.myapp.thiruaws.comn.",
+#   "id": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.Network/dnszones/thiruaws.comn/TXT/asuid.myapp",
 #   "name": "asuid.myapp",
 #   "provisioningState": "Succeeded",
 #   "resourceGroup": "rg-aca",
@@ -221,7 +221,7 @@ az containerapp hostname add --hostname "$SUBDOMAIN_NAME.$DOMAIN_NAME" -g $RG -n
 # [
 #   {
 #     "bindingType": "Disabled",
-#     "name": "myapp.houssem-dellai-1.com"
+#     "name": "myapp.thiruaws.comn"
 #   }
 # ]
 ```
@@ -234,7 +234,7 @@ az containerapp hostname bind --hostname "$SUBDOMAIN_NAME.$DOMAIN_NAME" -g $RG -
 #   {
 #     "bindingType": "SniEnabled",
 #     "certificateId": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.App/managedEnvironments/aca-environment/managedCertificates/mc-aca-environmen-myapp-houssem-de-1458",
-#     "name": "myapp.houssem-dellai-1.com"
+#     "name": "myapp.thiruaws.comn"
 #   }
 # ]
 ```
@@ -253,7 +253,7 @@ Verify the domain by navigating to the domain name in a browser. You should see 
 
 ```powershell
 echo "https://$SUBDOMAIN_NAME.$DOMAIN_NAME" # if using CNAME with subdomain
-# https://myapp.houssem-dellai-1.com
+# https://myapp.thiruaws.comn
 ```
 
 ![](images/browser.png)
