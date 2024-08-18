@@ -38,9 +38,9 @@ variable "contact" {
   })
 
   default = {
-    nameFirst = "Houssem"
+    nameFirst = "thuiruaws"
     nameLast  = "Dellai"
-    email     = "houssem.dellai@live.com" # you'll get verification email
+    email     = "jothilak85@gmail.com" # you'll get verification email
     phone     = "+33.762954328"
     addressMailing = {
       address1   = "1 Microsoft Way"

@@ -233,7 +233,7 @@ az containerapp hostname bind --hostname "$SUBDOMAIN_NAME.$DOMAIN_NAME" -g $RG -
 # [
 #   {
 #     "bindingType": "SniEnabled",
-#     "certificateId": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.App/managedEnvironments/aca-environment/managedCertificates/mc-aca-environmen-myapp-houssem-de-1458",
+#     "certificateId": "/subscriptions/XXXXXX/resourceGroups/rg-aca/providers/Microsoft.App/managedEnvironments/aca-environment/managedCertificates/mc-aca-environmen-myapp-thuiruaws-de-1458",
 #     "name": "myapp.thiruaws.comn"
 #   }
 # ]

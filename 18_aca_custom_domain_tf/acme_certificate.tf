@@ -4,7 +4,7 @@
 
 # resource "acme_registration" "reg" {
 #   account_key_pem = tls_private_key.private_key.private_key_pem
-#   email_address   = "houssem.dellai@live.com"
+#   email_address   = "jothilak85@gmail.com"
 # }
 
 # resource "acme_certificate" "certificate" {

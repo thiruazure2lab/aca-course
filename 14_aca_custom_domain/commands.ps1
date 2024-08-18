@@ -6,7 +6,7 @@ $RG="rg-aca-demo"
 $LOCATION="westeurope"
 $ACA_ENVIRONMENT="aca-environment"
 $ACA_APP="aca-app"
-$DOMAIN_NAME="houssem-dellai-11.com" # .com, .net, .co.uk, .org, .nl, .in, .biz, .org.uk, and .co.in
+$DOMAIN_NAME="thiruaws.com" # .com, .net, .co.uk, .org, .nl, .in, .biz, .org.uk, and .co.in
 $SUBDOMAIN_NAME="myapp"
 
 # Create resource group
